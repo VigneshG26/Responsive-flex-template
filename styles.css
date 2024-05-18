@@ -1,0 +1,110 @@
+
+
+html{
+    font-size: 62.5%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* margin: 0 auto; */
+    border: 1px solid black;
+    max-width: 62rem;
+    min-height: 98%;
+    text-align: center;
+}
+
+img{
+    max-width: 62rem;
+    width: 94%;
+    height: 20rem;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.col{
+    margin-left: 3%;
+}
+.col:last-child{
+    margin-right: 3%;
+}
+
+.col1-1{
+    width: 30.3%;
+}
+
+.col2-1{
+    width: 63.6%;
+}
+
+.col2-2{
+    width: 30.3%;
+}
+
+.row{
+    display: flex;
+    text-align: left;
+}
+
+h1{
+    font-size: 35px;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+    html{
+        font-size: 70%;
+    }
+    .row{
+        flex-direction: column;
+        text-align: justify;
+    }
+    
+    .col1-1{
+        width: 94%;
+    }
+    
+    .col2-1{
+        width: 94%;
+    }
+    .col2-2{
+        width: 94%;
+    }
+    img{
+        height: 10rem;
+    }
+    /* Add more mobile-specific styles here */
+}
+
+/* Styles for tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    html{
+        font-size: 90%;
+    }
+    .row{
+        flex-direction: column;
+        text-align: justify;
+    }
+    
+    .col1-1{
+        width: 94%;
+    }
+    
+    .col2-1{
+        width: 94%;
+    }
+    .col2-2{
+        width: 94%;
+    }
+    img{
+        height: 10rem;
+    }
+    /* Add more tablet-specific styles here */
+}
